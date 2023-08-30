@@ -78,7 +78,7 @@ const BookARoom = [
   },
 ];
 
-//static page that holds the all end points
+//html page that holds the all end points
 app.get("/", function (req, res) {
   res.sendFile(path.resolve("public/index.html"));
 });
@@ -145,7 +145,7 @@ app.post("/book-room", (req, res) => {
       roomId,
       bookingStatus:
         "booked" /* this is only for the newely created bookings because 
-                        the old ones are already stored in an variable so they dono't need  
+                        the old ones are already stored in an variable so they don't need  
                         while booking if the room was available booking status was automatically
                         updated to Booked thats why*/,
 
